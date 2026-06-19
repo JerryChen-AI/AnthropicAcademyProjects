@@ -2,7 +2,7 @@
 
 Course notebooks and projects from the **Building with the Claude API** curriculum, offered by [Anthropic Academy](https://www.anthropic.com/learn).
 
-## Modules
+## Building with the Claude API Modules
 
 | # | Topic |
 |---|-------|
