@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS CloudFormation template to extract all resource logical IDs and their types",
+    "format": "python",
+    "solution_criteria": "Solution should parse JSON/YAML CloudFormation template and return a dictionary mapping logical IDs to resource types. Must handle both JSON and YAML formats."
+  },
+  {
+    "task": "Validate that an AWS IAM policy document has the required structure with Principal, Effect, Action, and Resource fields",
+    "format": "json",
+    "solution_criteria": "Solution should be a JSON schema that validates IAM policy documents. Must enforce required fields and correct value types (e.g., Effect must be Allow or Deny)."
+  },
+  {
+    "task": "Extract AWS account ID, region, and service name from an ARN string",
+    "format": "regex",
+    "solution_criteria": "Solution should be a regex pattern that captures account ID, region, and service from AWS ARNs. Must work with formats like 'arn:aws:service:region:account-id:resource' and handle optional components."
+  }
+]

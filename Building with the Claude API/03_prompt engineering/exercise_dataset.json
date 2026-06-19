@@ -1,0 +1,52 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "The rise of nationalist movements across Europe in the early twentieth century fundamentally reshaped the continent's political landscape, particularly in Central and Eastern regions where imperial structures were collapsing. The Austro-Hungarian Empire's dissolution catalyzed competing claims for territorial sovereignty among Slavic, Germanic, and Hungarian populations, while simultaneously fueling cultural revivals that emphasized vernacular languages and folk traditions over cosmopolitan imperial identities. These nationalist currents intersected with emerging socialist ideologies in industrial urban centers, creating complex political tensions between traditional agrarian elites and modernizing working-class movements. Geographic factors such as the Danube River basin's strategic importance and the Balkans' historical position as a buffer zone between Ottoman and European spheres of influence further complicated state formation processes. The period witnessed simultaneous phenomena: ethnic nationalism, cultural nationalism based on linguistic revival, territorial reorganization, imperial decline, and ideological competition between socialism and conservatism."
+    },
+    "solution_criteria": [
+      "Extracts distinct topics including nationalism, political movements, cultural revival, imperialism, socialism, and geography without conflating overlapping themes",
+      "Distinguishes between related but separate concepts (e.g., nationalist movements vs. cultural nationalism, territorial reorganization vs. geographic factors)",
+      "Returns results as a JSON array of strings"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a historical analysis passage containing overlapping themes like political movements, cultural shifts, and geographical regions to verify accurate topic extraction and differentiation"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Anthropogenic climate change has accelerated the mobilization of legacy persistent organic pollutants (POPs) from contaminated sediments through enhanced hydrological cycling and thermal stratification of aquatic ecosystems. This study investigates the bioaccumulation kinetics of polychlorinated biphenyls (PCBs) and dichlorodiphenyltrichloroethane (DDT) in benthic macroinvertebrate communities using high-performance liquid chromatography (HPLC) coupled with mass spectrometry (MS/MS). We employed stable isotope analysis (\u03b413C and \u03b415N) to elucidate trophic transfer mechanisms and construct food web models incorporating microbial degradation pathways mediated by cytochrome P450 enzymes. Results demonstrate that temperature-dependent enzymatic activity in sediment-dwelling organisms correlates with increased contaminant biotransformation rates, suggesting that global warming may paradoxically enhance natural attenuation of legacy POPs while simultaneously increasing their bioavailability in the water column through desorption processes."
+    },
+    "solution_criteria": [
+      "Identifies all major scientific domains (climate science, toxicology, biochemistry, aquatic ecology)",
+      "Captures technical concepts and methodologies (PCBs, DDT, HPLC, stable isotope analysis, enzymatic processes)",
+      "Includes relevant environmental and biological processes (bioaccumulation, trophic transfer, thermal stratification, biotransformation)",
+      "Extracts topics as distinct, meaningful strings suitable for indexing or categorization"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a dense scientific abstract on interdisciplinary research (e.g., biochemistry + environmental science) containing technical jargon, acronyms, and specialized concepts to ensure comprehensive topic identification"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The study examined how microbial communities in soil ecosystems respond to anthropogenic climate change through shifts in bacterial diversity and fungal composition. We employed metagenomic sequencing to analyze samples from three distinct biomes: temperate forests, grasslands, and arid regions. Our findings reveal that elevated soil temperatures correlate with reduced fungal abundance, particularly among mycorrhizal associations, which subsequently impacts nutrient cycling efficiency and plant productivity. These microbial shifts have cascading effects on carbon sequestration rates, suggesting that soil microbiota play a critical role in feedback mechanisms between terrestrial ecosystems and atmospheric CO2 concentrations."
+    },
+    "solution_criteria": [
+      "Extracts both explicitly stated topics (e.g., microbial communities, bacterial diversity, metagenomic sequencing) and implicitly inferred topics (e.g., climate change impacts, ecosystem feedback mechanisms, carbon cycle)",
+      "Maintains appropriate topic granularity\u2014neither overly broad (e.g., 'biology') nor excessively narrow (e.g., individual bacterial species names not mentioned)",
+      "Returns results as a valid JSON array of strings"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a short passage containing implicit and explicit topics, where some topics are directly stated while others must be inferred from context, to evaluate topic granularity and inference capability"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Postmodern literary criticism has fundamentally challenged the notion of authorial intent, positioning the reader as an active participant in meaning-making rather than a passive consumer of predetermined significance. Drawing from Derridean deconstruction, scholars have interrogated the binary oppositions embedded within canonical texts, revealing how language itself resists stable interpretation through its inherent polysemy and deferral of meaning. This epistemological shift has profound implications for how we understand aesthetic experience: the sublime becomes not a transcendent moment of unified consciousness, but rather a site of productive instability where signification perpetually escapes the author's grasp. Furthermore, the concept of intertextuality\u2014the web of textual references, allusions, and echoes that constitute any literary work\u2014demonstrates that originality itself is a myth, as every text is necessarily palimpsestic, layered with traces of prior discourses and cultural contexts that precede and exceed individual authorship."
+    },
+    "solution_criteria": [
+      "Extracts key theoretical and conceptual topics (e.g., postmodern literary criticism, authorial intent, deconstruction, intertextuality, the sublime)",
+      "Returns output as a valid JSON array of strings",
+      "Identifies abstract and interpretive themes without requiring literal keyword matching",
+      "Captures substantive topics while avoiding overly granular or trivial phrases"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a passage on a humanities subject (literature, philosophy, or arts criticism) featuring abstract concepts, metaphorical language, and nuanced themes to ensure the prompt handles non-technical, interpretive content appropriately"
+  }
+]

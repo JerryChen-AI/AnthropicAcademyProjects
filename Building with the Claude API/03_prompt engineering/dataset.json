@@ -1,0 +1,81 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "72 kg",
+      "goal": "Marathon training - high carbohydrate intake for endurance performance and recovery",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one full day (breakfast, lunch, dinner, snacks)",
+      "Emphasizes carbohydrate-rich foods appropriate for endurance athlete caloric needs (~3000-3500 kcal)",
+      "Plan is compact and concise (under 400 words)",
+      "Includes timing or context relevant to marathon training nutrition"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a professional endurance athlete (marathon runner) requiring high caloric intake and carbohydrate loading focus"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "90 kg",
+      "goal": "Muscle recovery and strength gains post-training",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan spans exactly 1 day with 4-5 meals",
+      "Protein distributed across meals (minimum 25g per meal for muscle recovery)",
+      "Total daily protein intake aligns with strength athlete needs (1.6-2.2g per kg body weight)",
+      "Includes pre/post-workout nutrition timing recommendations"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) emphasizing protein distribution and muscle recovery across meals"
+  },
+  {
+    "prompt_inputs": {
+      "height": "188",
+      "weight": "82",
+      "goal": "Performance optimization for basketball competition",
+      "restrictions": "Vegan (no animal products)"
+    },
+    "solution_criteria": [
+      "Meal plan contains exactly 1 day of meals (breakfast, lunch, dinner, and snacks)",
+      "All foods are vegan with no animal-derived ingredients",
+      "Includes adequate plant-based protein sources (legumes, tofu, nuts, seeds, whole grains) appropriate for an 82kg athlete",
+      "Plan is compact and concise (brief descriptions, not lengthy explanations)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific dietary restriction (vegan basketball player) to verify plant-based protein sourcing and nutrient balance"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "78 kg",
+      "goal": "Optimize performance and recovery for evening soccer match with proper pre-game, during-game, and post-game nutrition timing",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan spans full day with specific timing for pre-match (2-3 hours before), during-match (if applicable), and post-match recovery meals",
+      "Includes appropriate macronutrient balance for soccer performance (carbohydrates for energy, adequate protein for recovery)",
+      "All meals and snacks respect vegetarian and nut-free restrictions",
+      "Plan is concise and fits on one page without excessive detail"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete in active competition day (soccer match in evening) requiring timing-specific pre-game, during-game, and recovery nutrition"
+  },
+  {
+    "prompt_inputs": {
+      "height": "172 cm",
+      "weight": "65 kg",
+      "goal": "Optimize energy and recovery for competitive swimming training (6 days/week, 2 hours daily)",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan spans 24 hours with 4-5 eating occasions aligned to training schedule",
+      "Portions and calorie distribution appropriate for teenage athlete growth and training demands",
+      "Includes hydration and electrolyte guidance for swimming recovery"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a young adolescent athlete (teenage swimmer) with age-appropriate portions, growth needs, and school/training schedule integration"
+  }
+]

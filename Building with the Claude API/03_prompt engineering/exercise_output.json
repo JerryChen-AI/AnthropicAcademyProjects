@@ -1,0 +1,72 @@
+[
+  {
+    "output": "```json\n[\n  \"Nationalist movements in Europe\",\n  \"Austro-Hungarian Empire dissolution\",\n  \"Central and Eastern European political change\",\n  \"Territorial sovereignty claims\",\n  \"Cultural revival and vernacular languages\",\n  \"Ethnic nationalism\",\n  \"Linguistic nationalism\",\n  \"Socialist ideology\",\n  \"Imperial decline\",\n  \"Agrarian elites\",\n  \"Working-class movements\",\n  \"Danube River basin geopolitics\",\n  \"Balkans as buffer zone\",\n  \"Ottoman influence in Europe\",\n  \"State formation\",\n  \"Conservatism versus socialism\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The rise of nationalist movements across Europe in the early twentieth century fundamentally reshaped the continent's political landscape, particularly in Central and Eastern regions where imperial structures were collapsing. The Austro-Hungarian Empire's dissolution catalyzed competing claims for territorial sovereignty among Slavic, Germanic, and Hungarian populations, while simultaneously fueling cultural revivals that emphasized vernacular languages and folk traditions over cosmopolitan imperial identities. These nationalist currents intersected with emerging socialist ideologies in industrial urban centers, creating complex political tensions between traditional agrarian elites and modernizing working-class movements. Geographic factors such as the Danube River basin's strategic importance and the Balkans' historical position as a buffer zone between Ottoman and European spheres of influence further complicated state formation processes. The period witnessed simultaneous phenomena: ethnic nationalism, cultural nationalism based on linguistic revival, territorial reorganization, imperial decline, and ideological competition between socialism and conservatism."
+      },
+      "solution_criteria": [
+        "Extracts distinct topics including nationalism, political movements, cultural revival, imperialism, socialism, and geography without conflating overlapping themes",
+        "Distinguishes between related but separate concepts (e.g., nationalist movements vs. cultural nationalism, territorial reorganization vs. geographic factors)",
+        "Returns results as a JSON array of strings"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a historical analysis passage containing overlapping themes like political movements, cultural shifts, and geographical regions to verify accurate topic extraction and differentiation"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing only topics with no commentary. It meets the secondary criteria well by distinguishing between related concepts (nationalism types, territorial vs geographic factors, ideology vs movements) and covering the major thematic areas. The extraction is thorough and well-organized. Minor weaknesses include slight omissions of explicitly mentioned topics and one instance of mild conceptual overlap, but these do not significantly detract from an otherwise strong extraction that captures the passage's core topics."
+  },
+  {
+    "output": "```json\n[\n  \"Anthropogenic climate change\",\n  \"Persistent organic pollutants (POPs)\",\n  \"Legacy contaminants in sediments\",\n  \"Hydrological cycling\",\n  \"Thermal stratification\",\n  \"Polychlorinated biphenyls (PCBs)\",\n  \"Dichlorodiphenyltrichloroethane (DDT)\",\n  \"Benthic macroinvertebrates\",\n  \"Bioaccumulation kinetics\",\n  \"High-performance liquid chromatography (HPLC)\",\n  \"Mass spectrometry (MS/MS)\",\n  \"Stable isotope analysis\",\n  \"Trophic transfer\",\n  \"Food web modeling\",\n  \"Microbial degradation\",\n  \"Cytochrome P450 enzymes\",\n  \"Temperature-dependent enzymatic activity\",\n  \"Contaminant biotransformation\",\n  \"Natural attenuation\",\n  \"Bioavailability\",\n  \"Desorption processes\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Anthropogenic climate change has accelerated the mobilization of legacy persistent organic pollutants (POPs) from contaminated sediments through enhanced hydrological cycling and thermal stratification of aquatic ecosystems. This study investigates the bioaccumulation kinetics of polychlorinated biphenyls (PCBs) and dichlorodiphenyltrichloroethane (DDT) in benthic macroinvertebrate communities using high-performance liquid chromatography (HPLC) coupled with mass spectrometry (MS/MS). We employed stable isotope analysis (\u03b413C and \u03b415N) to elucidate trophic transfer mechanisms and construct food web models incorporating microbial degradation pathways mediated by cytochrome P450 enzymes. Results demonstrate that temperature-dependent enzymatic activity in sediment-dwelling organisms correlates with increased contaminant biotransformation rates, suggesting that global warming may paradoxically enhance natural attenuation of legacy POPs while simultaneously increasing their bioavailability in the water column through desorption processes."
+      },
+      "solution_criteria": [
+        "Identifies all major scientific domains (climate science, toxicology, biochemistry, aquatic ecology)",
+        "Captures technical concepts and methodologies (PCBs, DDT, HPLC, stable isotope analysis, enzymatic processes)",
+        "Includes relevant environmental and biological processes (bioaccumulation, trophic transfer, thermal stratification, biotransformation)",
+        "Extracts topics as distinct, meaningful strings suitable for indexing or categorization"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a dense scientific abstract on interdisciplinary research (e.g., biochemistry + environmental science) containing technical jargon, acronyms, and specialized concepts to ensure comprehensive topic identification"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. Regarding secondary criteria, it excellently identifies topics across all four major scientific domains and captures technical concepts, methodologies, and environmental/biological processes. The topics are distinct and suitable for indexing. While there is minor redundancy between a couple of entries, this does not significantly detract from the overall quality. The extraction is thorough and well-organized."
+  },
+  {
+    "output": "```json\n[\n  \"microbial communities\",\n  \"soil ecosystems\",\n  \"climate change\",\n  \"bacterial diversity\",\n  \"fungal composition\",\n  \"metagenomic sequencing\",\n  \"temperate forests\",\n  \"grasslands\",\n  \"arid regions\",\n  \"soil temperature\",\n  \"fungal abundance\",\n  \"mycorrhizal associations\",\n  \"nutrient cycling\",\n  \"plant productivity\",\n  \"carbon sequestration\",\n  \"soil microbiota\",\n  \"ecosystem feedback mechanisms\",\n  \"atmospheric CO2\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The study examined how microbial communities in soil ecosystems respond to anthropogenic climate change through shifts in bacterial diversity and fungal composition. We employed metagenomic sequencing to analyze samples from three distinct biomes: temperate forests, grasslands, and arid regions. Our findings reveal that elevated soil temperatures correlate with reduced fungal abundance, particularly among mycorrhizal associations, which subsequently impacts nutrient cycling efficiency and plant productivity. These microbial shifts have cascading effects on carbon sequestration rates, suggesting that soil microbiota play a critical role in feedback mechanisms between terrestrial ecosystems and atmospheric CO2 concentrations."
+      },
+      "solution_criteria": [
+        "Extracts both explicitly stated topics (e.g., microbial communities, bacterial diversity, metagenomic sequencing) and implicitly inferred topics (e.g., climate change impacts, ecosystem feedback mechanisms, carbon cycle)",
+        "Maintains appropriate topic granularity\u2014neither overly broad (e.g., 'biology') nor excessively narrow (e.g., individual bacterial species names not mentioned)",
+        "Returns results as a valid JSON array of strings"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a short passage containing implicit and explicit topics, where some topics are directly stated while others must be inferred from context, to evaluate topic granularity and inference capability"
+    },
+    "score": 10,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. It demonstrates strong performance on secondary criteria by extracting both explicit topics (bacterial diversity, metagenomic sequencing, mycorrhizal associations) and implicit/inferred topics (ecosystem feedback mechanisms, carbon sequestration impacts). The granularity is well-calibrated for a scholarly article\u2014specific enough to be meaningful but not so narrow as to list individual species or overly broad categories. The 18 topics comprehensively cover the passage's main themes without redundancy. Minor stylistic variations in phrasing (e.g., 'soil temperature' vs. 'elevated soil temperatures') do not constitute deficiencies given the task's flexibility in topic extraction."
+  },
+  {
+    "output": "```json\n[\n  \"Postmodern literary criticism\",\n  \"Authorial intent\",\n  \"Reader-response theory\",\n  \"Derridean deconstruction\",\n  \"Binary oppositions\",\n  \"Polysemy\",\n  \"Deferral of meaning\",\n  \"Aesthetic experience\",\n  \"The sublime\",\n  \"Signification\",\n  \"Intertextuality\",\n  \"Originality\",\n  \"Palimpsest\",\n  \"Textual references and allusions\",\n  \"Discourse analysis\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Postmodern literary criticism has fundamentally challenged the notion of authorial intent, positioning the reader as an active participant in meaning-making rather than a passive consumer of predetermined significance. Drawing from Derridean deconstruction, scholars have interrogated the binary oppositions embedded within canonical texts, revealing how language itself resists stable interpretation through its inherent polysemy and deferral of meaning. This epistemological shift has profound implications for how we understand aesthetic experience: the sublime becomes not a transcendent moment of unified consciousness, but rather a site of productive instability where signification perpetually escapes the author's grasp. Furthermore, the concept of intertextuality\u2014the web of textual references, allusions, and echoes that constitute any literary work\u2014demonstrates that originality itself is a myth, as every text is necessarily palimpsestic, layered with traces of prior discourses and cultural contexts that precede and exceed individual authorship."
+      },
+      "solution_criteria": [
+        "Extracts key theoretical and conceptual topics (e.g., postmodern literary criticism, authorial intent, deconstruction, intertextuality, the sublime)",
+        "Returns output as a valid JSON array of strings",
+        "Identifies abstract and interpretive themes without requiring literal keyword matching",
+        "Captures substantive topics while avoiding overly granular or trivial phrases"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+      "scenario": "Testing with a passage on a humanities subject (literature, philosophy, or arts criticism) featuring abstract concepts, metaphorical language, and nuanced themes to ensure the prompt handles non-technical, interpretive content appropriately"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article, with no extra commentary, and returns only the JSON array. It successfully extracts key theoretical concepts that are explicitly or clearly implied in the passage. However, it has minor deficiencies in secondary criteria: the inclusion of 'Discourse analysis' represents an unjustified inference not substantively present in the text, and the omission of reader-response as an explicit theme (despite including 'Reader-response theory' as a label) represents incomplete coverage of central ideas. The solution is strong overall but has these small gaps that prevent a perfect score."
+  }
+]

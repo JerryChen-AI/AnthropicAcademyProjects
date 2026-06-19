@@ -1,0 +1,215 @@
+
+================================================================================
+                    STREAMING SERVICE CHURN ANALYSIS
+                          DETAILED FINDINGS REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+This analysis examined 500 streaming service customers to identify the major 
+drivers of customer churn. The overall churn rate is 38.6%, with 193 customers 
+having churned and 307 remaining active.
+
+Through statistical analysis (t-tests and chi-square tests), we identified 
+seven significant factors that distinguish churned customers from active ones.
+
+
+MAJOR CHURN DRIVERS (Ranked by Impact)
+================================================================================
+
+1. CUSTOMER SERVICE INTERACTIONS - MOST CRITICAL DRIVER
+   Impact: +27.7% (p < 0.001) *** HIGHLY SIGNIFICANT ***
+   ------------------------------------------------------------------------
+   - Churned customers: 3.18 interactions/year (average)
+   - Active customers: 2.49 interactions/year (average)
+   - Interpretation: Churned users contact customer service 28% MORE often
+   
+   KEY INSIGHT: High customer service interactions indicate unresolved issues,
+   technical problems, or dissatisfaction. This is the #1 predictor of churn.
+   
+   RECOMMENDATION: 
+   - Implement proactive outreach for customers with 3+ interactions
+   - Improve first-contact resolution rates
+   - Analyze common complaint patterns to address root causes
+
+
+2. VIEWING HOURS - ENGAGEMENT INDICATOR
+   Impact: -20.0% (p < 0.001) *** HIGHLY SIGNIFICANT ***
+   ------------------------------------------------------------------------
+   - Churned customers: 66.6 hours/month (average)
+   - Active customers: 83.2 hours/month (average)
+   - Interpretation: Churned users watch 20% LESS content
+   
+   KEY INSIGHT: Lower viewing hours signal disengagement before churn occurs.
+   This is a strong early warning indicator.
+   
+   RECOMMENDATION:
+   - Set up automated alerts for users whose viewing drops below 70 hours/month
+   - Send personalized content recommendations to re-engage
+   - Offer limited-time promotions when viewing drops
+
+
+3. BINGE WATCHING SESSIONS - ENGAGEMENT DEPTH
+   Impact: -19.7% (p < 0.001) *** HIGHLY SIGNIFICANT ***
+   ------------------------------------------------------------------------
+   - Churned customers: 6.2 sessions/month (average)
+   - Active customers: 7.7 sessions/month (average)
+   - Interpretation: Churned users have 20% FEWER binge sessions
+   
+   KEY INSIGHT: Binge watching indicates high engagement and content satisfaction.
+   Loss of binge behavior suggests declining interest.
+   
+   RECOMMENDATION:
+   - Promote binge-worthy series to at-risk users
+   - Create "Continue Watching" nudges to encourage completion
+   - Highlight new seasons of previously binged content
+
+
+4. SUBSCRIPTION TIER - PRICING & VALUE PERCEPTION
+   Impact: 19.4% difference (p = 0.009) ** SIGNIFICANT **
+   ------------------------------------------------------------------------
+   Churn rates by tier:
+   - Basic tier: 43.5% churn (HIGHEST RISK)
+   - Standard tier: 39.5% churn
+   - Premium tier: 24.1% churn (LOWEST RISK)
+   
+   KEY INSIGHT: Premium subscribers are nearly 2x less likely to churn than
+   Basic subscribers. Higher investment creates stronger commitment.
+   
+   RECOMMENDATION:
+   - Offer upgrade incentives to Basic tier users
+   - Create a "trial Premium features" campaign
+   - Emphasize Premium value proposition (4K, multiple screens, etc.)
+   - Consider Basic tier improvements to reduce churn at entry level
+
+
+5. UNIQUE TITLES WATCHED - CONTENT DIVERSITY
+   Impact: -18.1% (p < 0.001) *** HIGHLY SIGNIFICANT ***
+   ------------------------------------------------------------------------
+   - Churned customers: 19.5 titles/month (average)
+   - Active customers: 23.7 titles/month (average)
+   - Interpretation: Churned users explore 18% FEWER unique titles
+   
+   KEY INSIGHT: Limited content exploration suggests users aren't finding
+   enough interesting content, potentially indicating catalog dissatisfaction.
+   
+   RECOMMENDATION:
+   - Improve content discovery and recommendation algorithms
+   - Create curated collections for different user profiles
+   - Highlight hidden gems and diverse content options
+   - Expand catalog in underperforming genres
+
+
+6. AVERAGE SESSION DURATION - ENGAGEMENT QUALITY
+   Impact: -14.4% (p < 0.001) *** HIGHLY SIGNIFICANT ***
+   ------------------------------------------------------------------------
+   - Churned customers: 49.4 minutes/session (average)
+   - Active customers: 57.8 minutes/session (average)
+   - Interpretation: Churned users have 14% SHORTER sessions
+   
+   KEY INSIGHT: Shorter sessions may indicate interrupted viewing, lack of
+   compelling content, or technical issues causing early abandonment.
+   
+   RECOMMENDATION:
+   - Investigate technical issues causing early session termination
+   - Analyze content that drives longer session durations
+   - Implement "Up Next" suggestions to extend sessions
+
+
+7. MONTHLY COST - PRICE SENSITIVITY
+   Impact: -7.7% (p = 0.005) ** SIGNIFICANT **
+   ------------------------------------------------------------------------
+   - Churned customers: $11.18/month (average)
+   - Active customers: $12.11/month (average)
+   - Interpretation: Churned users pay slightly less on average
+   
+   KEY INSIGHT: This is primarily driven by subscription tier differences.
+   Lower-tier customers perceive less value and churn more.
+
+
+ADDITIONAL FINDINGS
+================================================================================
+
+TOP GENRE PREFERENCES (Not Statistically Significant, p = 0.118)
+--------------------------------------------------------------------------------
+While not reaching statistical significance, notable patterns emerged:
+- Horror viewers: 52.3% churn (highest)
+- Thriller viewers: 48.3% churn
+- Documentary viewers: 25.9% churn (lowest)
+- Comedy viewers: 33.0% churn
+
+INSIGHT: Genre preference alone doesn't predict churn, but combined with low
+engagement metrics, it may help target retention efforts.
+
+
+CUSTOMER SEGMENTS AT HIGHEST RISK
+================================================================================
+
+Profile of High-Risk Churner:
+- Subscription: Basic tier
+- Viewing Hours: < 70 hours/month
+- Binge Sessions: < 6 per month
+- Customer Service: 3+ interactions/year
+- Unique Titles: < 20 per month
+- Session Duration: < 50 minutes average
+
+ESTIMATED AT-RISK POPULATION: ~40-45% of Basic tier subscribers
+
+
+STRATEGIC RECOMMENDATIONS
+================================================================================
+
+IMMEDIATE ACTIONS (0-30 days):
+1. Deploy customer service quality improvement initiative
+2. Create automated alerts for declining engagement metrics
+3. Launch Basic → Premium upgrade campaign with trial period
+
+SHORT-TERM ACTIONS (1-3 months):
+4. Implement predictive churn model using identified drivers
+5. Design targeted re-engagement campaigns for low-viewing users
+6. Improve content recommendation algorithms
+7. Analyze and address common customer service complaints
+
+LONG-TERM ACTIONS (3-6 months):
+8. Enhance Basic tier value proposition or adjust pricing
+9. Expand content catalog in high-churn genres
+10. Develop personalized retention offers based on viewing patterns
+
+
+EXPECTED IMPACT
+================================================================================
+
+If these recommendations are implemented:
+- Potential churn reduction: 20-30% (reducing churn rate from 38.6% to 27-31%)
+- Estimated customer retention: 40-60 additional customers per 500
+- ROI: Significant, as retention costs are typically 5-10x lower than acquisition
+
+
+TECHNICAL NOTES
+================================================================================
+- Sample size: 500 customers
+- Statistical methods: Independent t-tests, chi-square tests
+- Significance level: α = 0.05
+- All p-values < 0.05 indicate statistical significance
+- Effect sizes calculated as percentage differences between groups
+
+
+CONCLUSION
+================================================================================
+
+Customer service issues and declining engagement metrics are the primary drivers
+of churn in this streaming service. The analysis reveals that churn is 
+predictable and preventable through proactive monitoring and targeted 
+interventions. 
+
+Immediate focus should be on:
+1. Resolving customer service pain points
+2. Re-engaging users with declining viewing patterns
+3. Upgrading Basic tier customers to higher value tiers
+
+These data-driven insights provide a clear roadmap for reducing churn and
+improving customer lifetime value.
+
+================================================================================
+                              END OF REPORT
+================================================================================

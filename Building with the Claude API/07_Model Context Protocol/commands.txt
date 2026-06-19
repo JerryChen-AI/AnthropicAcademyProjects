@@ -1,0 +1,12 @@
+//Run mcp under terminal:
+
+uv run main.py
+
+or
+
+python main.py
+
+
+//Starting the Inspector (For easy dev, it will not really change the real file)
+
+=> mcp dev mcp_server.py
