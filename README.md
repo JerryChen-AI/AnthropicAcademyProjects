@@ -1,6 +1,6 @@
 # Anthropic Academy Projects
 
-Course notebooks and projects from the **Building with the Claude API** curriculum.
+Course notebooks and projects from the **Building with the Claude API** curriculum, offered by [Anthropic Academy](https://www.anthropic.com/learn).
 
 ## Modules
 
