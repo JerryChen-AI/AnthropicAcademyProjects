@@ -23,6 +23,9 @@ __pycache__/
 # VS Code
 .vscode/
 
+# Course folders to exclude
+Building with the Claude API/10_WarpUP/
+
 # OS files
 .DS_Store
 Thumbs.db
