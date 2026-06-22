@@ -51,7 +51,7 @@ The preview entry point is `/App.jsx` by default (Claude is instructed to always
 
 ### Persistence
 
-Prisma + SQLite (`prisma/schema.prisma`). Two models: `User` (email/password) and `Project` (stores serialized messages + VFS data as JSON strings). Anonymous users can use the app; projects are only saved for authenticated users.
+The database schema is defined in `prisma/schema.prisma` — refer to it whenever you need to understand how data is stored. Prisma + SQLite with two models: `User` (email/password) and `Project` (stores serialized messages + VFS data as JSON strings). Anonymous users can use the app; projects are only saved for authenticated users.
 
 Server actions in `src/actions/` handle project CRUD.
 
