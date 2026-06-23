@@ -70,6 +70,8 @@ function runTypeCheck(configPath) {
 }
 
 async function main() {
+
+  //process.exit(0);
   const input = await readInput();
   const file = input.tool_response?.filePath || input.tool_input?.file_path;
 
