@@ -6,7 +6,7 @@ import path from "path";
 const REVIEW_DIR = "src/queries";
 
 async function main() {
-  process.exit(0);
+  //process.exit(0);
   // Read JSON input from stdin
   const input = await new Promise((resolve) => {
     let data = "";
@@ -36,7 +36,7 @@ async function main() {
   const newContent =
     toolInput.content || toolInput.contents || toolInput.new_string;
   const prompt = `You are reviewing a proposed change to a database query file.
-Your task is to analyze if the new or modified query functions could be 
+Your task is to analyze if the new or modified query functions could be
 accomplished by reusing or slightly modifying existing query functions.
 
 Within reason, we want to prevent duplicate queries from being added into this project,
@@ -52,7 +52,7 @@ Please research and analyze the existing queries in the ./queries directory and:
 1. Identify any new query functions being added in this change
 2. For each new query function, determine if it could be accomplished by:
    - Using an existing query function as-is
-   - Slightly modifying an existing query function, perhaps by adding additional 
+   - Slightly modifying an existing query function, perhaps by adding additional
       arguments or expanding a select statement
 
 If yes, provide specific feedback on which existing functions could be used instead. Be concise and specific.
